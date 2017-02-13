@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/ekhorowa/PHONE-Object-Oriented-Programming-model.git"
   },
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  }
   "author": "Omokaro Faith",
   "license": "ISC",
   "bugs": {
