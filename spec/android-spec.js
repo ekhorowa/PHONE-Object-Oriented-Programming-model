@@ -7,13 +7,23 @@ describe("Phones class : Create a samsungPhone, give it a name, model ,cost, yea
       expect(typeof samsungPhones).toEqual(typeof {});
       expect(samsungPhones instanceof Phones).toBeTruthy();
   });
-	it("The Phone name, model, cost, year year_released should be a property of the Phone", function() {
+	it("The Phone name should be a property of the Phone", function() {
       var tecnoPhones  = new Phones('Tecno', 'M5', 30000 , 2014);
       expect(tecnoPhones.name).toBe('Tecno');
-      expect(tecnoPhones.model).toBe('M5');
-      expect(tecnoPhones.cost).toBe(30000);
-      expect(tecnoPhones.year_released).toBe(2014);
     });
+  it("The Phone  model should be a property of the Phone", function() {
+      var tecnoPhones  = new Phones('Tecno', 'p9', 8000 , 2012);
+      expect(tecnoPhones.model).toBe('p9');
+    });
+  it("The Phone cost should be a property of the Phone", function() {
+      var tecnoPhones  = new Phones('Tecno', 'L2', 25000 , 2016);
+      expect(tecnoPhones.cost).toBe(25000);
+    });
+  it("The Phone year_released should be a property of the Phone", function() {
+      var tecnoPhones  = new Phones('Tecno', 'C8', 45000 , 2015);
+      expect(tecnoPhones.year_released).toBe(2015);
+    });
+
     it("The  phone get_name function should return the instance of the Phone class", function() {
       var sony  = new Phones('Sony', 'xperia', 45000, 2012 );
       var sonyZero = sony.get_name();
